@@ -1,9 +1,9 @@
 import "./App.css";
 import NavigationBar from "./Components/NavigationBar";
-import bannerImage from "./assets/images/logo192.png";
+import bannerImage from "./assets/images/Home_Banner.png";
 import TypeWriterEffect from "react-typewriter-effect";
 import studentImage from "./assets/images/man-posing.png";
-import { Button } from "flowbite-react";
+import MyButton from "./Components/MyButton";
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
               typeSpeed={100}
               hideCursorAfterText={true}
             />
+            <MyButton className="mt-2" btnText="Contact Me"></MyButton>
           </div>
           <div className="md:visible invisible flex  justify-center md:basis-1/2 basis-0">
             <img src={bannerImage} alt="banner"></img>
@@ -70,9 +71,7 @@ function App() {
             cycle. Quickly learns and masters new technologies while working in
             both team and self-directed settings.
           </p>
-          <Button className="bg-transparent rounded-3xl border-solid border-2 border-secondary  hover:bg-secondary">
-            Download Resume
-          </Button>
+          <MyButton btnText="Download Resume"></MyButton>
         </div>
       </section>
     </div>
