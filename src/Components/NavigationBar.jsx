@@ -11,7 +11,7 @@ function NavigationBar() {
     { name: "Contact Me", link: "#Contact" },
   ];
   return (
-    <Navbar fluid={true} className="bg-primary1 sticky top-0 md:pr-28 md:py-5">
+    <Navbar fluid={true} className="bg-primary sticky top-0 md:pr-28 md:py-5">
       <Navbar.Brand>
         <img
           src="https://flowbite.com/docs/images/logo.svg"
@@ -28,7 +28,7 @@ function NavigationBar() {
           return (
             <Navbar.Link
               href={navLink.link}
-              className="text-white md:px-3 md:py-2 md:hover:bg-secondary1 rounded-md md:hover:text-white font-Poppins "
+              className="text-white md:px-3 md:py-2 md:hover:bg-secondary rounded-md md:hover:text-white font-Poppins "
             >
               {navLink.name}
             </Navbar.Link>
