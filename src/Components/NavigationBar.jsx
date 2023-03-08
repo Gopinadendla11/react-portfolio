@@ -6,12 +6,12 @@ function NavigationBar() {
     { name: "Home", link: "#Home" },
     { name: "About", link: "#About" },
     { name: "Skills", link: "#Skills" },
-    { name: "Education", link: "#Education" },
     { name: "Experience", link: "#Experience" },
+    { name: "Projects", link: "#Projects" },
     { name: "Contact Me", link: "#Contact" },
   ];
   return (
-    <Navbar fluid={true} className="bg-primary sticky top-0 md:pr-28 md:py-5">
+    <Navbar fluid={true} className="bg-black sticky top-0 md:pr-28 md:py-5">
       <Navbar.Brand>
         <img
           src="https://flowbite.com/docs/images/logo.svg"
