@@ -57,12 +57,12 @@ const MyNavigationBar = () => {
         </div>
       </div>
       {isNavDropdownVisible && (
-        <div className="w-screen p-5 border-white ">
+        <div className="w-screen px-5 border-white ">
           <div className="flex flex-col items-center">
             <ul>
               {navLinks.map((navLink) => {
                 return (
-                  <li className=" text-white w-screen text-[14px] py-2 m-1 font-Poppins text-center bg-matt">
+                  <li className=" text-white w-screen text-[14px] p-3 font-Poppins border-black border-[1px] text-center bg-matt">
                     <a href={navLink.link}> {navLink.name}</a>
                   </li>
                 );

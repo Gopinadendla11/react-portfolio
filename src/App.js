@@ -59,11 +59,13 @@ function App() {
               }}
               startDelay={200}
               cursorColor="#ff004f"
-              text="and I'm a Full Stack Developer"
+              text="and I'm a Full Stack Developer."
               typeSpeed={100}
               hideCursorAfterText={true}
             />
-            <RoundButton className="mt-2" btnText="Contact Me"></RoundButton>
+            <a href="/#Contact">
+              <RoundButton className="mt-2" btnText="Contact Me"></RoundButton>
+            </a>
           </div>
           <div className="md:visible invisible flex  justify-center md:basis-1/2 basis-0">
             <img src={bannerImage} alt="banner"></img>
@@ -105,7 +107,9 @@ function App() {
             cycle. Quickly learns and masters new technologies while working in
             both team and self-directed settings.
           </p>
-          <RoundButton btnText="Download Resume"></RoundButton>
+          <a href="./Gopi Nadendla Resume.pdf" target="_blank">
+            <RoundButton btnText="Download Resume"></RoundButton>
+          </a>
         </div>
       </section>
 
@@ -191,6 +195,7 @@ function App() {
             <MdCall className="w-5 h-5 fill-secondary mx-3"></MdCall>
             <p>+1 (704) 906 1872</p>
           </div>
+
           <div className="flex">
             <MdFacebook className="w-5 h-5 fill-secondary m-3"></MdFacebook>
             <FaTwitterSquare className="w-5 h-5 fill-secondary m-3"></FaTwitterSquare>
@@ -203,6 +208,9 @@ function App() {
               <ImLinkedin className="w-5 h-5 fill-secondary m-3"></ImLinkedin>
             </a>
           </div>
+          <a href="./Gopi Nadendla Resume.pdf" target="_blank">
+            <SquareButton btnText="Download Resume"></SquareButton>
+          </a>
         </div>
         <div className="h-full flex flex-col basis-2/3 items-center md:items-start ">
           <input
