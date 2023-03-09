@@ -2,6 +2,9 @@ import "./App.css";
 import bannerImage from "./assets/images/Home_Banner.png";
 import TypeWriterEffect from "react-typewriter-effect";
 import studentImage from "./assets/images/man-posing.png";
+import PwdManagerAppImg from "./assets/images/PasswordManager.jpg";
+import TeleMedicineImg from "./assets/images/TelemedicineWebapp.jpg";
+import VisualAnalyticsImg from "./assets/images/VisualAnalytics.jpg";
 import RoundButton from "./Components/RoundButton";
 import { FaTools } from "react-icons/fa";
 import { MdWeb, MdEmail, MdWork, MdCall, MdFacebook } from "react-icons/md";
@@ -11,6 +14,7 @@ import { Chrono } from "react-chrono";
 import { FaUniversity, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 import MyNavigationBar from "./Components/MyNavigationBar";
 import SquareButton from "./Components/SquareButton";
+import ProjectCard from "./Components/ProjectCard";
 
 function App() {
   const items = [
@@ -176,10 +180,36 @@ function App() {
         </Chrono>
       </section>
 
-      {/* <section
-        id="projects"
-        className="lg:p-24 flex flex-col h-screen w-screen text-white justify-center z-0"
-      ></section> */}
+      <section
+        id="Projects"
+        className="lg:p-24 flex flex-col h-auto w-screen text-white justify-center items-center"
+      >
+        <p className="sm:text-5xl text-3xl my-5 font-bold">My Projects</p>
+        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 my-10">
+          <ProjectCard
+            image={PwdManagerAppImg}
+            title="Password Manager App"
+            content="This is an Android app for password management where users can
+                store and manage their login credentials."
+            projectLink="https://github.com/Gopinadendla11/password_manager.git"
+          ></ProjectCard>
+
+          <ProjectCard
+            image={TeleMedicineImg}
+            title="TeleMedicine Web App"
+            content="This is a web application for online appointment scheduling management and virtual consultation with doctors through video call."
+            projectLink="https://github.com/Gopinadendla11/vitals7_app.git"
+          ></ProjectCard>
+
+          <ProjectCard
+            image={VisualAnalyticsImg}
+            title="Visual Analysis of Zillow Housing Data"
+            content="This is a Streamlit web app which displays the analysis of the Housing sales prices based on the dataset from Zillow in the past 10 years."
+            projectLink="https://github.com/Gopinadendla11/va-project-group7.git"
+          ></ProjectCard>
+        </div>
+        <SquareButton className="w-10" btnText="See More"></SquareButton>
+      </section>
 
       <section
         id="Contact"
