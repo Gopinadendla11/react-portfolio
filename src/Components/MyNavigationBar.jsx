@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdMenu, MdClear } from "react-icons/md";
+import AvatarImg from "../assets/images/Avatar.jpg";
 
 const MyNavigationBar = () => {
   let navLinks = [
@@ -22,7 +23,7 @@ const MyNavigationBar = () => {
       <div className="text-white w-screen h-20 p-4 flex justify-between items-center  bg-black ">
         <div className="flex">
           <img
-            src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+            src={AvatarImg}
             alt="Avatar"
             className="border-solid w-10 h-10 rounded-full border-2 border-secondary p-0.5"
           ></img>

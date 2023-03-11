@@ -1,20 +1,21 @@
 import "./App.css";
 import bannerImage from "./assets/images/Home_Banner.png";
 import TypeWriterEffect from "react-typewriter-effect";
-import studentImage from "./assets/images/man-posing.png";
+import studentImage from "./assets/images/DP.jpg";
 import PwdManagerAppImg from "./assets/images/PasswordManager.jpg";
 import TeleMedicineImg from "./assets/images/TelemedicineWebapp.jpg";
 import VisualAnalyticsImg from "./assets/images/VisualAnalytics.jpg";
 import RoundButton from "./Components/RoundButton";
 import { FaTools } from "react-icons/fa";
-import { MdWeb, MdEmail, MdWork, MdCall, MdFacebook } from "react-icons/md";
-import { ImAndroid, ImLinkedin } from "react-icons/im";
+import { MdWeb, MdWork } from "react-icons/md";
+import { ImAndroid } from "react-icons/im";
 import SkillCard from "./Components/SkillCard";
 import { Chrono } from "react-chrono";
-import { FaUniversity, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import { FaUniversity } from "react-icons/fa";
 import MyNavigationBar from "./Components/MyNavigationBar";
 import SquareButton from "./Components/SquareButton";
 import ProjectCard from "./Components/ProjectCard";
+import ContactMe from "./Pages/ContactMe";
 
 function App() {
   const items = [
@@ -84,7 +85,7 @@ function App() {
         <div className="flex justify-center items-center xl:items-start basis-1/3 flex-1 rounded-md p-10 xl:p-20 ">
           <img
             src={studentImage}
-            className="object-contain bg-pink-400 rounded-lg aspect-square md:aspect-auto"
+            className="object-contain bg-gradient-to-t from-sky-100 to-sky-300 rounded-lg aspect-square md:aspect-auto"
             alt="profile"
           ></img>
         </div>
@@ -211,52 +212,8 @@ function App() {
         <SquareButton className="w-10" btnText="See More"></SquareButton>
       </section>
 
-      <section
-        id="Contact"
-        className="lg:p-24 py-12 flex flex-col md:flex-row   w-screen text-white"
-      >
-        <div className="h-full basis-1/3 flex flex-col lg:ml-16 items-center justify-center">
-          <p className="sm:text-5xl text-3xl my-5 font-bold">Contact Me</p>
-          <div className="flex m-3 items-center">
-            <MdEmail className="w-5 h-5 fill-secondary mx-3"></MdEmail>
-            <p>gopinadendla1@gmail.com</p>
-          </div>
-          <div className="flex m-3 items-center">
-            <MdCall className="w-5 h-5 fill-secondary mx-3"></MdCall>
-            <p>+1 (704) 906 1872</p>
-          </div>
-
-          <div className="flex">
-            <MdFacebook className="w-5 h-5 fill-secondary m-3"></MdFacebook>
-            <FaTwitterSquare className="w-5 h-5 fill-secondary m-3"></FaTwitterSquare>
-            <FaInstagram className="w-5 h-5 fill-secondary m-3"></FaInstagram>
-            <a
-              href="https://www.linkedin.com/in/gopinadendla/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ImLinkedin className="w-5 h-5 fill-secondary m-3"></ImLinkedin>
-            </a>
-          </div>
-          <a href="./Gopi Nadendla Resume.pdf" target="_blank">
-            <SquareButton btnText="Download Resume"></SquareButton>
-          </a>
-        </div>
-        <div className="h-full flex flex-col basis-2/3 items-center md:items-start ">
-          <input
-            placeholder="Your Name"
-            className="w-2/3 p-3 my-5 rounded-lg bg-matt"
-          ></input>
-          <input
-            placeholder="Your Email"
-            className="w-2/3 p-3 my-5 rounded-lg bg-matt"
-          ></input>
-          <textarea
-            placeholder="Your Message"
-            className="w-2/3 h-48 p-3 my-5 rounded-lg bg-matt focus:border-white"
-          ></textarea>
-          <SquareButton btnText="Submit" rounded="md"></SquareButton>
-        </div>
+      <section id="Contact" className="lg:p-24 ">
+        <ContactMe></ContactMe>
       </section>
     </div>
   );
