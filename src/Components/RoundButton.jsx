@@ -10,9 +10,4 @@ const MyButton = (props) => {
   );
 };
 
-// MyButton.defaultProps = {
-//   rounded: "xl",
-//   extrastyles: "",
-// };
-
 export default MyButton;

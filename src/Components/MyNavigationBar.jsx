@@ -20,7 +20,7 @@ const MyNavigationBar = () => {
 
   return (
     <div className="sticky top-0">
-      <div className="text-white w-screen h-20 p-4 flex justify-between items-center  bg-black ">
+      <div className="text-white w-screen h-20 p-4 flex justify-between items-center bg-black ">
         <div className="flex">
           <img
             src={AvatarImg}
