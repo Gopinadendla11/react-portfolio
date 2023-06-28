@@ -3,7 +3,6 @@ import bannerImage from "./assets/images/Home_Banner.png";
 import TypeWriterEffect from "react-typewriter-effect";
 import studentImage from "./assets/images/DP.jpg";
 import PwdManagerAppImg from "./assets/images/PasswordManager.jpg";
-import TeleMedicineImg from "./assets/images/TelemedicineWebapp.jpg";
 import VisualAnalyticsImg from "./assets/images/VisualAnalytics.jpg";
 import TrackMyJobImg from "./assets/images/TMJProject.png";
 import RoundButton from "./Components/RoundButton";
